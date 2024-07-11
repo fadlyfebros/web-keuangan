@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/src/Dashboard/img/jar.png" type="image/x-icon">
+    <title>TabunganKu</title>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <!-- Navbar -->
+    <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="/src/Dashboard/index.html" class="flex-shrink-0 flex items-center">
+                        <img src="/src/Dashboard/img/jar.png" alt="TabunganKu Logo" class="h-8 w-8 mr-2">
+                        <span class="text-2xl font-semibold text-blue-700">TabunganKu</span>
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="navbar-sticky" class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#welcome" class="text-gray-900 hover:text-blue-700">Home</a>
+                    <a href="#features" class="text-gray-900 hover:text-blue-700">Features</a>
+                    <a href="/src/Login/Login.html" class="text-gray-900 hover:text-blue-700">Login</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#welcome" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Home</a>
+            <a href="#features" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Features</a>
+            <a href="/src/Login/Login.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login</a>
+        </div>
+    </nav>
+
+    <!-- Welcome Hero Section -->
+    <section id="welcome-hero" class="welcome-hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="header-text">
+                        <h2>Welcome To TabunganKu</h2>
+                        <p>Aplikasi pencatatan keuangan harian dengan fitur transaksi terbaik</p>
+                        <a href="/src/Login/Login.html" class="btn-get-started relative inline-flex items-center justify-start p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                Get Started
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 justify-center">
+        <div class="container mx-auto px-4">
+            <h2 class="garis text-3xl font-semibold text-center mb-8">FEATURES</h2>
+            <div class="flex justify-center flex-wrap">
+                <div class="w-full md:w-1/2 xl:w-1/2 p-4 text-center">
+                    <h3 class="text-xl font-semibold mb-2">TabunganKu</h3>
+                    <p class="text-center">Tabunganku adalah aplikasi web pencatatan keuangan harian yang mempunyai fitur-fitur menarik untuk memonitoring keuangan harian anda. Direkomendasikan bagi para remaja yang kesulitan dalam melakukan pengelolaan keuangannya.</p>
+                </div>
+            </div>
+            <div class="flex justify-center flex-wrap">
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <img src="/src/Dashboard/img/transaksi.jpg" alt="Feature Image 1" class="rounded-lg shadow-lg mb-4">
+                </div>
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <h3 class="text-xl font-semibold mb-2">Transaksi Harian</h3>
+                    <p class="">Kami memberikan fitur transaksi harian yang akan menampilkan data harian yang bisa mempermudah anda dalam mengelola keuangan pribadi. dan data keuangan anda akan tersimpan dengan aman di dalam aplikasi ini.</p>
+                </div>
+            </div>
+            <div class="flex justify-center flex-wrap">
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <img src="/src/Dashboard/img/rekening.jpg" alt="Feature Image 3" class="rounded-lg shadow-lg mb-4">
+                </div>
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <h3 class="text-xl font-semibold mb-2">Rekening Pribadi</h3>
+                    <p class="">Kami menyediakan fitur rekening pribadi yang dapat mempermudah anda dalam melakukan pengelolaan keuangan di dompet dan juga di rekening anda. Dengan fitur ini, pengelolaan uang anda di rekening menjadi lebih mudah dan terkelola dengan baik.</p>
+                </div>
+            </div>
+            <div class="flex justify-center flex-wrap">
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <img src="/src/Dashboard/img/monitor.jpg" alt="Feature Image 4" class="rounded-lg shadow-lg mb-4">
+                </div>
+                <div class="w-1/2 md:w-1/2 xl:w-1/2 p-4">
+                    <h3 class="text-xl font-semibold mb-2">Monitoring Keuangan</h3>
+                    <p class="">Monitoring keuangan tentunya sangat diperlukan untuk mengelola pengeluaran dan pemasukan kita. Kami menyediakan dashboard yang berisi beberapa fitur, seperti saldo, total uang yang masuk dan keluar, dan rekening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@themesberg/flowbite@1.4.5/dist/flowbite.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
