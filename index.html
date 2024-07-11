@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/src/Dashboard/img/jar.png" type="image/x-icon">
+    <link rel="icon" href="/src/img/jar.png" type="image/x-icon">
     <title>TabunganKu</title>
 </head>
 <body class="bg-gray-100 dark:bg-gray-800">
     <!-- Navbar -->
     <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <img src="/src/img/jar.png" alt="TabunganKu Logo" class="h-8 w-8 mr-2">
-                        <span class="text-2xl font-semibold text-blue-700">TabunganKu</span>
-                    </a>
-                </div>
-                <div class="-mr-2 flex items-center md:hidden">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="/src/img/jar.png" alt="TabunganKu Logo" class="h-8 w-8 mr-2">
+                    <span class="text-2xl font-semibold text-blue-700">TabunganKu</span>
+                </a>
+                <div class="-mr-2 flex md:hidden">
                     <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
                         <span class="sr-only">Open main menu</span>
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -28,9 +26,9 @@
                     </button>
                 </div>
                 <div id="navbar-sticky" class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="#welcome" class="text-gray-900 hover:text-blue-700">Home</a>
-                    <a href="#features" class="text-gray-900 hover:text-blue-700">Features</a>
-                    <a href="Login/Login.html" class="text-gray-900 hover:text-blue-700">Login</a>
+                    <a href="#welcome" class="text-gray-900 dark:text-white hover:text-blue-700">Home</a>
+                    <a href="#features" class="text-gray-900 dark:text-white hover:text-blue-700">Features</a>
+                    <a href="Login/Login.html" class="text-gray-900 dark:text-white hover:text-blue-700">Login</a>
                 </div>
             </div>
         </div>
@@ -39,7 +37,7 @@
             <a href="#features" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Features</a>
             <a href="Login/Login.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login</a>
         </div>
-    </nav>
+    </nav>    
 
     <!-- Welcome Hero Section -->
     <section id="welcome" class="welcome-hero">
@@ -100,7 +98,30 @@
             </div>
         </div>
     </section>
-
+    <!-- Footer -->  
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/src/img/jar.png" alt="TabunganKu Logo" class="h-8 w-8 mr-2">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TabunganKu</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#welcome" class="hover:underline mx-4 md:mx-6">Home</a>
+                    </li>
+                    <li>
+                        <a href="#features" class="hover:underline mx-4 md:mx-6">Features</a>
+                    </li>
+                    <li>
+                        <a href="/Login/Login.html" class="hover:underline mx-4 md:mx-6">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">TabunganKu™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@themesberg/flowbite@1.4.5/dist/flowbite.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
